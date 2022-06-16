@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Removal } from "../StyledComponents/Box";
 
 const Flex = styled.div`
   display: flex;
@@ -14,13 +15,11 @@ const Flex = styled.div`
 `;
 const Text = styled.text`
   color: ${(props) => props.color};
-  font-family: "Poppins", sans-serif;
-  font-family: "Quicksand", sans-serif;
   font-weight: 900;
+  line-height: 130%;
   font-size: ${(props) => props.content};
 `;
 const Container = styled.div`
-  width: 780px;
   text-align: center;
   margin-top: 100px;
   justify-content: center;
@@ -34,7 +33,6 @@ export default function Banks() {
           <Text content="50px" color="rgba(255,255,255,1)">
             GulfCoin Will be listed on
           </Text>
-          
         </Container>
       </Flex>
       <Flex>
@@ -42,6 +40,16 @@ export default function Banks() {
         <img src="images/Gulfexchange.svg" />
         <img src="images/Lbank.svg" />
         <img src="images/Bitmart.svg" />
+      </Flex>
+      <Flex>
+        <Removal>
+        <img src="images/Token6.svg" />
+
+        </Removal>
+        <Removal>
+        <img src="images/Phone.svg" />
+          
+        </Removal>
       </Flex>
     </>
   );

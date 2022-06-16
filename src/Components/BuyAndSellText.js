@@ -8,7 +8,6 @@ const Flex = styled.div`
 const Text = styled.text`
   color: ${(props) => props.color};
   font-family: "Poppins", sans-serif;
-  font-family: "Quicksand", sans-serif;
   font-weight: 900;
   font-size: ${(props) => props.content};
 `;

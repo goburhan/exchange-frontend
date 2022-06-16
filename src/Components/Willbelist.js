@@ -15,13 +15,12 @@ const Flex = styled.div`
 const Text = styled.text`
   color: ${(props) => props.color};
   font-family: "Poppins", sans-serif;
-  font-family: "Quicksand", sans-serif;
   font-weight: 900;
   font-size: ${(props) => props.content};
 `;
 const Box = styled.div`
   display: flex;
-  width:650px;
+  width: 650px;
 `;
 
 export default function Willbelist() {
@@ -44,18 +43,22 @@ export default function Willbelist() {
         </Removal>
       </Box>
       <Flex>
-      <Box>
-        <Text content="34px" color="#fff">
-          Take your first step into safe , secure crypto investing
-        </Text>
+        <Box>
+          <Text content="34px" color="#fff">
+            Take your first step into safe , secure crypto investing
+            <Removal>
+          <img src="/images/Token7.svg" style={{position:"absolute" , marginLeft:"20%"}}  />
+        </Removal>
+          </Text>
         </Box>
         <Removal>
           <img src="/images/Lock.svg" />
         </Removal>
       </Flex>
-      <Removal>
-        <img src="/images/Token4.svg" />
-      </Removal>
+      
+        <Removal>
+          <img src="/images/Token4.svg"  />
+        </Removal>
 
       <Flex></Flex>
     </>

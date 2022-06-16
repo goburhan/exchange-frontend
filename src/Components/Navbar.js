@@ -9,12 +9,14 @@ const Buton = styled(StyledButton)`
 `;
 const Navibar = styled.div`
   display: flex;
-  width: 100vw;
+  width: 100vw  ;
   height: 100px;
 
   justify-content: flex-end;
   background-color: rgba(35, 35, 34, 0.5);
 `;
+
+
 
 const Items = styled.div`
   display: flex;
@@ -24,7 +26,6 @@ const Items = styled.div`
   a {
     color: #fff;
     font-family: "Poppins", sans-serif;
-  font-family: "Quicksand", sans-serif;
     margin-left: 20px;
     font-weight: bold;
     font-size: 16px;
@@ -70,6 +71,8 @@ export default function Navbar() {
             </Buton>
             </a>
           </Items>
+
+
         </Container>
       </Navibar>
     </>

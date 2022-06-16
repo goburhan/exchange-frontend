@@ -15,11 +15,10 @@ const Text = styled.text`
   display: flex;
   color: ${(props) => props.color || "white"};
   font-family: "Poppins", sans-serif;
-  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   letter-spacing: -0.065em;
   font-size: ${(props) => props.content};
-  line-height: 134px;
+  line-height: ${(props) => props.lengthAdjust || "135px"};
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 18px;
     line-height: 30px;
@@ -38,6 +37,8 @@ const Container = styled.div`
   width: 45vw;
   margin-top: 100px;
   flex-wrap: wrap;
+  @media (max-width: ${({ theme }) => theme.laptop}) {
+    
   @media (max-width: ${({ theme }) => theme.mobile}) {
     img {
       max-width: 331px;
@@ -53,12 +54,16 @@ const Box = styled.div`
 export default function Enterance() {
   return (
     <Flex>
-      <Container style={{ marginLeft: "85px" }}>
+      <Container style={{ marginLeft: "165px" }}>
         <Title>
-          Crypto <br /> Trading
+          Crypto Trading
+          <Removal>
+          <img src="images/Token1.svg" style={{ position: " absolute "  , marginLeft:"-5%"}} />
+
+          </Removal>
         </Title>
-        <Text content="38px">
-          <Text content="38px" color="#79D316">
+        <Text lengthAdjust="76px" content="38px">
+          <Text lengthAdjust="76px" content="38px" color="#79D316">
             Gulfex&nbsp;
           </Text>
           is the place to start your trading
@@ -79,26 +84,14 @@ export default function Enterance() {
             </StyledButton>{" "}
           </a>
         </Flex>
-        <motion.div
-          animate={{ y: [0, 50, 0] }}
-          transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
-        >
+      
           <Removal>
             <img src="images/Token2.svg" style={{ position: "absolute" }} />
           </Removal>
-        </motion.div>
       </Container>
 
       <Container>
-        <motion.div
-          animate={{ y: [0, 50, 0] }}
-          transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
-        >
-          <Removal>
-            <img src="images/Token1.svg" style={{ position: "absolute" }} />
-          </Removal>
-        </motion.div>
-        <img src="images/Laptop.svg" style={{ marginLeft: "45px" }} />
+        <img src="images/Laptop.svg" style={{ marginLeft: "45px" , minWidth:"100px" , maxWidth:"400px"}} />
       </Container>
     </Flex>
   );

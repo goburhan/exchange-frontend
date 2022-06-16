@@ -25,18 +25,17 @@ color: #565976;
   const Email = styled.div`
     width: 260px;
     text-align: center;
-    padding:15px;
-    place-item:center;
+    padding: 15px;
+    place-item: center;
     border: 1px solid #53bf0a;
     border-radius: 10px;
     color: #565976;
-   
   `;
 
   const Flex = styled.div`
 display:flex;
 
-margin : 5% 5% 5% 5%;
+margin : 2% 5% 0% 5%;
 justify-content:space-evenly;
 @media (max-width: ${({ theme }) => theme.mobile}) {
   flex-wrap:wrap;
@@ -53,7 +52,6 @@ margin : 0% 25% 0 5%;
   }
 `;
   const Footer = styled.div`
-    contain: content;
     width: 100vw;
     background: linear-gradient(106.44deg, #09120a 23%, #09210c 113.13%);
     border-radius: 25px;
@@ -64,8 +62,6 @@ margin : 0% 25% 0 5%;
       <Flex>
         <Box>
           <img src="images/Logo.svg" maxWidth="80px" />
-       
-          
         </Box>
 
         <Flex>

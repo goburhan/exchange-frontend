@@ -4,12 +4,12 @@ import { Removal } from "../StyledComponents/Box";
 
 const Flex = styled.div`
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
 `;
 const Text = styled.text`
   color: ${(props) => props.color};
   font-family: "Poppins", sans-serif;
-  font-family: "Quicksand", sans-serif;
   font-weight: 900;
   font-size: ${(props) => props.content};
 `;
