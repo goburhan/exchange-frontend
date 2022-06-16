@@ -8,11 +8,17 @@ export default function Footer() {
     width: 524px;
     gap: 10px;
     contain: content;
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      padding: 0px;
+    }
   `;
 
   const Text = styled.div`
 color: #565976;
  margin-bottom:20px;
+ @media (max-width: ${({ theme }) => theme.mobile}) {
+  margin-bottom:5px;
+}
   }
 `;
   const Email = styled.div`
@@ -28,6 +34,7 @@ color:#565976;
 
   const Flex = styled.div`
 display:flex;
+flex-wrap:wrap;
 margin : 5% 5% 0 5%;
 justify-content:space-evenly;
   }
@@ -35,10 +42,13 @@ justify-content:space-evenly;
   const Container = styled.div`
   justify-content:center;
 margin : 0% 25% 0 5%;
+@media (max-width: ${({ theme }) => theme.mobile}) {
+  margin : 0% 20% 0% 0%;
+}
   }
 `;
   const Footer = styled.div`
-    position: absolute;
+    contain:content;
     width: 100vw;
     height: 536px;
     background: linear-gradient(106.44deg, #09120a 23%, #09210c 113.13%);
@@ -74,7 +84,6 @@ margin : 0% 25% 0 5%;
             <Text>Support</Text>
             <Text>FAQ</Text>
             <Text>Knowledge Base</Text>
-            
           </Container>
           <Container>
             <Text>Policy</Text>
@@ -86,7 +95,6 @@ margin : 0% 25% 0 5%;
             <Text>Contacts</Text>
             <Text>exchance@gulfex.io</Text>
             <Text>+111 111 111</Text>
-           
           </Container>
         </Flex>
       </Flex>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Removal } from "../StyledComponents/Box";
 
 const Flex = styled.div`
   display: flex;
@@ -23,7 +24,11 @@ const Cards = styled.div`
   flex-wrap: wrap;
   margin-top: 100px;
   justify-content: center;
-  
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    img{
+      margin-bottom:25px;
+    }
+  }
 `;
 const Box = styled.div`
   display: flex;
@@ -54,8 +59,9 @@ export default function OurFeatures() {
         <img style={{marginLeft:"20px"}} src="images/Features1.svg" />
       </Cards>
       <Box>
+        <Removal>
       <img src="images/Token3.svg" />
-
+      </Removal>
       </Box>
     </>
   );

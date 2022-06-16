@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { Flex } from "../StyledComponents/Flex";
 import { StyledButton } from "../StyledComponents/Button";
 
+const Buton = styled(StyledButton)`
+@media (max-width: ${({ theme }) => theme.mobile}) {
+   display:none;
+`;
 const Navibar = styled.div`
   display: flex;
   width: 100vw;
@@ -24,6 +28,10 @@ const Items = styled.div`
     font-size: 14px;
     line-height: 21px;
   }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    a{
+     display:none;
+    }
 `;
 
 const Container = styled.div`
@@ -46,11 +54,12 @@ export default function Navbar() {
             <a>Features</a>
             <a>FAQ</a>
             <a>Blog</a>
-            <StyledButton radius="18px"
+            <Buton
+              radius="18px"
               style={{ width: "160px", height: "44px", marginLeft: "20px" }}
             >
               Get Started
-            </StyledButton>
+            </Buton>
           </Items>
         </Container>
       </Navibar>

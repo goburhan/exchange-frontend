@@ -4,6 +4,7 @@ import { StyledButton } from "../StyledComponents/Button";
 
 const Flex = styled.div`
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-evenly;
   margin: 0 5% 0 5%;
 `;
