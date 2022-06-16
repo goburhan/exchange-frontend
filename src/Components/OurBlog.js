@@ -26,9 +26,11 @@ const Title = styled.div`
 `;
 const Container = styled.div`
   text-align: left;
-  width: 524px;
+  max-width: 524px;
+  min-width: 325px;
   contain: content;
   margin-top: 100px;
+  margin-bottom:50px;
 `;
 
 export default function OurBlog() {
@@ -36,7 +38,7 @@ export default function OurBlog() {
     <>
       <Title>
         <Text content="50px" color="rgba(255,255,255,1)">
-          GulfCoin Will be listed on
+         Our Blog
         </Text>
         <br />
         <Text content="16px" color="rgba(255,255,255,0.65)">
@@ -47,7 +49,7 @@ export default function OurBlog() {
 
       <Flex>
         <Container>
-          <img src="images/Ourblog1.svg" />
+          <img src="images/Ourblog1.svg"  style={{minWidth:"325px"}} />
           <br />
           <br />
           <Text color="#fff">

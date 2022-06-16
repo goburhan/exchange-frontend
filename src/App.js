@@ -10,7 +10,6 @@ import Willbelist from "./Components/Willbelist";
 import Banks from "./Components/Banks";
 import OurBlog from "./Components/OurBlog";
 import Footer from "./Components/Footer";
-import Entrancetokens from "./Components/Entrancetokens";
 
 const theme = {
   mobile: "586px",

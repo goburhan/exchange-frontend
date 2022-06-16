@@ -44,7 +44,7 @@ export default function OurFeatures() {
       <Flex>
         <Container>
           <Text content="50px" color="rgba(255,255,255,1)">
-            Buy and sell with the lowest fees in the industry
+           Our Features
           </Text>
           <br />
           <Text content="16px" color="rgba(255,255,255,0.65)">

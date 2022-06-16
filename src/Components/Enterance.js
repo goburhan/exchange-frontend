@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { StyledButton } from "../StyledComponents/Button";
 import { Removal } from "../StyledComponents/Box";
-import Entrancetokens from "./Entrancetokens"
+import { motion } from "framer-motion";
 
 const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
   @media (max-width: ${({ theme }) => theme.mobile}) {
+      flex-wrap:wrap;
   }
 `;
 const Text = styled.text`
@@ -25,8 +26,12 @@ const Text = styled.text`
   }
 `;
 const Title = styled(Text)`
+font-size: 142px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 32px;
+    font-size: 42px;
+    text-align:center;
+    line-height: 50px;
+    justify-content:center;
   }
 `;
 const Container = styled.div`
@@ -34,22 +39,23 @@ const Container = styled.div`
   margin-top: 100px;
   flex-wrap: wrap;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    img{
-      max-width:331px;
+    img {
+      max-width: 331px;
     }
   }
 `;
 const Box = styled.div`
-@media (max-width: ${({ theme }) => theme.mobile}) {
-  display:none;
-}
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: none;
+  }
 `;
+
 
 export default function Enterance() {
   return (
     <Flex>
       <Container style={{ marginLeft: "85px" }}>
-        <Title content="140px">
+        <Title >
           Crypto <br /> Trading
         </Title>
         <Text content="38px">
@@ -58,7 +64,7 @@ export default function Enterance() {
           </Text>
           is the place to start your trading
         </Text>
-        <Flex>
+        <Flex style={{flexWrap:"nowrap"}}>
           <StyledButton radius="18px">Start Trading</StyledButton>
           <StyledButton
             radius="18px"
@@ -67,19 +73,27 @@ export default function Enterance() {
             View Exchange
           </StyledButton>
         </Flex>
-        <Removal>
-        <img src="images/Token2.svg" style={{ position: "absolute" }} />
-        </Removal>
-        
+        <motion.div
+         animate={{ y: [0, 50, 0]  }}
+         transition={{ duration: 2 ,repeat: Infinity, repeatDelay: 2}}
+        >
+          <Removal>
+            <img src="images/Token2.svg" style={{ position: "absolute" }} />
+          </Removal>
+        </motion.div>
       </Container>
 
       <Container>
-      <Removal>
-        <img src="images/Token1.svg" style={{ position: "absolute" }} />
-</Removal>
+      <motion.div
+          animate={{ y: [0, 50, 0]  }}
+          transition={{ duration: 2 ,repeat: Infinity, repeatDelay: 2}}
+        >
+        <Removal>
+          <img src="images/Token1.svg" style={{ position: "absolute" }} />
+        </Removal>
+        </motion.div>
         <img src="images/Laptop.svg" style={{ marginLeft: "45px" }} />
       </Container>
-
     </Flex>
   );
 }

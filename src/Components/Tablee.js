@@ -66,14 +66,14 @@ export default function BasicTable() {
           <TableBody>
             <TableRow>
               <TableCell>
-                <img src="images/Btc.svg" />
+                <img src="images/Ethereum.svg" />
               </TableCell>
-              <TableCell style={{ color: "#fff" }}>Bitcoin</TableCell>
+              <TableCell style={{ color: "#fff" }}>ETHEREUM</TableCell>
               <TableCell style={{ color: "#75FF14" }} align="right">
-                BTC
+                ETH
               </TableCell>
               <TableCell style={{ color: "#fff" }} align="right">
-                $56,290,30
+                $2,600
               </TableCell>
               <TableCell style={{ color: "#0DBB7C" }} align="right">
                 +1.68
@@ -88,17 +88,17 @@ export default function BasicTable() {
             </TableRow>
             <TableRow>
               <TableCell>
-                <img src="images/Btc.svg" />
+                <img src="images/Dot.svg" />
               </TableCell>
-              <TableCell style={{ color: "#fff" }}>Bitcoin</TableCell>
+              <TableCell style={{ color: "#fff" }}>Polkadot</TableCell>
               <TableCell style={{ color: "#75FF14" }} align="right">
-                BTC
+                DOT
               </TableCell>
               <TableCell style={{ color: "#fff" }} align="right">
-                $56,290,30
+                $2,1
               </TableCell>
               <TableCell style={{ color: "#0DBB7C" }} align="right">
-                +1.68
+                +3.68
               </TableCell>
               <TableCell align="right">
                 <img src="images/Graph1.svg" />
@@ -110,17 +110,17 @@ export default function BasicTable() {
             </TableRow>
             <TableRow>
               <TableCell>
-                <img src="images/Btc.svg" />
+                <img src="images/Cardano.svg" />
               </TableCell>
-              <TableCell style={{ color: "#fff" }}>Bitcoin</TableCell>
+              <TableCell style={{ color: "#fff" }}>Cardano</TableCell>
               <TableCell style={{ color: "#75FF14" }} align="right">
-                BTC
+                ADA
               </TableCell>
               <TableCell style={{ color: "#fff" }} align="right">
-                $56,290,30
+                $1
               </TableCell>
               <TableCell style={{ color: "#0DBB7C" }} align="right">
-                +1.68
+                +5.68
               </TableCell>
               <TableCell align="right">
                 <img src="images/Graph1.svg" />

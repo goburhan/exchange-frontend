@@ -8,4 +8,6 @@ font-size:18px;
 font-weight:bold;
 background-color:#6ACB11;
 color:#fff;
+@media (max-width: ${({ theme }) => theme.mobile}) {
+}
 `

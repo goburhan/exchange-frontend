@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { Box, Removal } from "../StyledComponents/Box";
+
 const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 15% 0 15%;
+  
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    img{
-      margin: 0% 0% 0% 0%;
-    }
+      margin: 0 1% 0 0%;
+     
   }
 `;
 
@@ -18,7 +19,7 @@ export default function Willbelist() {
     <>
       <Flex>
         <img src="/images/Shield.svg" />
-        <img src="/images/24Acces.svg" style={{ minWidth: "480px" }} />
+        <img src="/images/24Acces.svg" style={{ minWidth: "402px" }} />
       </Flex>
       <Box>
         <Removal>
@@ -26,7 +27,7 @@ export default function Willbelist() {
         </Removal>
       </Box>
       <Flex>
-        <img src="/images/Takeyour.svg" style={{ minWidth: "480px" }} />
+        <img src="/images/Takeyour.svg" style={{ minWidth: "420px" }} />
         <Removal>
           <img src="/images/Lock.svg" />
         </Removal>

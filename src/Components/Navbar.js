@@ -40,6 +40,8 @@ const Container = styled.div`
   width: 50vw;
   margin-left: 87px;
   margin-right: 87px;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    justify-content:center;
 `;
 
 export default function Navbar() {

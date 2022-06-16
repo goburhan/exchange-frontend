@@ -16,6 +16,7 @@ export default function Footer() {
   const Text = styled.div`
 color: #565976;
  margin-bottom:20px;
+ font-weight: ${(props) => props.font};
  @media (max-width: ${({ theme }) => theme.mobile}) {
   margin-bottom:5px;
 }
@@ -24,8 +25,6 @@ color: #565976;
   const Email = styled.div`
 width:304px;
 height:56px;
-text-align:center;
-margin-top:30px;
 border:1px solid #53BF0A ;
 border-radius:10px;
 color:#565976;
@@ -34,23 +33,26 @@ color:#565976;
 
   const Flex = styled.div`
 display:flex;
-flex-wrap:wrap;
-margin : 5% 5% 0 5%;
+
+margin : 5% 5% 5% 5%;
 justify-content:space-evenly;
+@media (max-width: ${({ theme }) => theme.mobile}) {
+  flex-wrap:wrap;
+  justify-content:flex-start;
+}
   }
 `;
   const Container = styled.div`
   justify-content:center;
 margin : 0% 25% 0 5%;
 @media (max-width: ${({ theme }) => theme.mobile}) {
-  margin : 0% 20% 0% 0%;
+  margin : 5% 8% 0% 0%;
 }
   }
 `;
   const Footer = styled.div`
-    contain:content;
+    contain: content;
     width: 100vw;
-    height: 536px;
     background: linear-gradient(106.44deg, #09120a 23%, #09210c 113.13%);
     border-radius: 25px;
   `;
@@ -67,13 +69,13 @@ margin : 0% 25% 0 5%;
           </Text>
           <Email>
             Email Address
-            <img src="images/Arrow.svg" />
+            <img src="images/Arrow.svg" style={{marginTop:"5px"}} />
           </Email>
         </Box>
 
         <Flex>
           <Container>
-            <Text>Company</Text>
+            <Text font="bold">Company</Text>
             <Text>About</Text>
             <Text>Contact Us</Text>
             <Text>Press</Text>
@@ -81,18 +83,18 @@ margin : 0% 25% 0 5%;
             <Text>Blog</Text>
           </Container>
           <Container>
-            <Text>Support</Text>
+            <Text font="bold">Support</Text>
             <Text>FAQ</Text>
             <Text>Knowledge Base</Text>
           </Container>
           <Container>
-            <Text>Policy</Text>
+            <Text font="bold">Policy</Text>
             <Text>Terms of use</Text>
             <Text>Privacy Policy</Text>
             <Text>Refund Policy</Text>
           </Container>
           <Container>
-            <Text>Contacts</Text>
+            <Text font="bold">Contacts</Text>
             <Text>exchance@gulfex.io</Text>
             <Text>+111 111 111</Text>
           </Container>
