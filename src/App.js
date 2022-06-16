@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Enterance from "./Components/Enterance";
+import BasicTable from "./Components/Tablee";
+import BuyAndSellText from "./Components/BuyAndSellText";
+import { ThemeProvider } from "styled-components";
+import OurFeatures from "./Components/OurFeatures";
+import Willbelist from "./Components/Willbelist";
+import Banks from "./Components/Banks";
+import OurBlog from "./Components/OurBlog";
+import Footer from "./Components/Footer";
+const theme = {
+  mobile: "768px",
+  laptops: "992px",
+  tablet: "1024px",
+  bigscreen: "1400px",
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+      <Enterance />
+      <BuyAndSellText />
+      <BasicTable />
+      <OurFeatures />
+      <Willbelist />
+      <Banks />
+      <OurBlog />
+      <Footer />
+    </ThemeProvider>
   );
 }
 

@@ -1,0 +1,47 @@
+import React from "react";
+import styled from "styled-components";
+
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  margin:0 5% 0 5%;
+`;
+const Text = styled.text`
+  color: ${(props) => props.color};
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  font-size: ${(props) => props.content};
+`;
+const Container = styled.div`
+  width: 780px;
+  text-align: center;
+  margin-top: 100px;
+  justify-content: center;
+`;
+
+export default function Banks() {
+  return (
+    <>
+      <Flex>
+        <Container>
+          <Text content="50px" color="rgba(255,255,255,1)">
+            GulfCoin Will be listed on
+          </Text>
+          <br />
+          <Text content="16px" color="rgba(255,255,255,0.65)">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit.
+          </Text>
+        </Container>
+      </Flex>
+      <Flex>
+        <img src="images/Mcx.svg" />
+        <img src="images/Gulfexchange.svg" />
+        <img src="images/Lbank.svg" />
+        <img src="images/Bitmart.svg" />
+      </Flex>
+     
+    </>
+  );
+}
