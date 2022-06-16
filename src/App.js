@@ -22,12 +22,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <Navbar />
       <Enterance />
-      <BuyAndSellText />
-      <BasicTable />
       <OurFeatures />
       <Willbelist />
       <Banks />
-      <OurBlog />
       <Footer />
     </ThemeProvider>
   );

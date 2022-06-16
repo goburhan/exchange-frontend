@@ -23,13 +23,15 @@ color: #565976;
   }
 `;
   const Email = styled.div`
-width:304px;
-height:56px;
-border:1px solid #53BF0A ;
-border-radius:10px;
-color:#565976;
-  }
-`;
+    width: 260px;
+    text-align: center;
+    padding:15px;
+    place-item:center;
+    border: 1px solid #53bf0a;
+    border-radius: 10px;
+    color: #565976;
+   
+  `;
 
   const Flex = styled.div`
 display:flex;
@@ -68,8 +70,7 @@ margin : 0% 25% 0 5%;
             ame.
           </Text>
           <Email>
-            Email Address
-            <img src="images/Arrow.svg" style={{marginTop:"5px"}} />
+            <a>Email Address :</a>{" "}
           </Email>
         </Box>
 
@@ -80,11 +81,9 @@ margin : 0% 25% 0 5%;
             <Text>Contact Us</Text>
             <Text>Press</Text>
             <Text>News</Text>
-            <Text>Blog</Text>
           </Container>
           <Container>
             <Text font="bold">Support</Text>
-            <Text>FAQ</Text>
             <Text>Knowledge Base</Text>
           </Container>
           <Container>

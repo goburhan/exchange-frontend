@@ -8,7 +8,7 @@ const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-      flex-wrap:wrap;
+    flex-wrap: wrap;
   }
 `;
 const Text = styled.text`
@@ -26,12 +26,12 @@ const Text = styled.text`
   }
 `;
 const Title = styled(Text)`
-font-size: 142px;
+  font-size: 142px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 42px;
-    text-align:center;
+    text-align: center;
     line-height: 50px;
-    justify-content:center;
+    justify-content: center;
   }
 `;
 const Container = styled.div`
@@ -50,12 +50,11 @@ const Box = styled.div`
   }
 `;
 
-
 export default function Enterance() {
   return (
     <Flex>
       <Container style={{ marginLeft: "85px" }}>
-        <Title >
+        <Title>
           Crypto <br /> Trading
         </Title>
         <Text content="38px">
@@ -64,18 +63,25 @@ export default function Enterance() {
           </Text>
           is the place to start your trading
         </Text>
-        <Flex style={{flexWrap:"nowrap"}}>
-          <StyledButton radius="18px">Start Trading</StyledButton>
-          <StyledButton
-            radius="18px"
-            style={{ backgroundColor: "#212D1A", marginLeft: "15px" }}
-          >
-            View Exchange
-          </StyledButton>
+        <Flex style={{ flexWrap: "nowrap" }}>
+          <a href=" https://gulfex.io/signup">
+            {" "}
+            <StyledButton radius="18px">Start Trading</StyledButton>
+          </a>
+
+          <a href=" https://gulfex.io/signup">
+            {" "}
+            <StyledButton
+              radius="18px"
+              style={{ backgroundColor: "#212D1A", marginLeft: "15px" }}
+            >
+              View Exchange
+            </StyledButton>{" "}
+          </a>
         </Flex>
         <motion.div
-         animate={{ y: [0, 50, 0]  }}
-         transition={{ duration: 2 ,repeat: Infinity, repeatDelay: 2}}
+          animate={{ y: [0, 50, 0] }}
+          transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
         >
           <Removal>
             <img src="images/Token2.svg" style={{ position: "absolute" }} />
@@ -84,13 +90,13 @@ export default function Enterance() {
       </Container>
 
       <Container>
-      <motion.div
-          animate={{ y: [0, 50, 0]  }}
-          transition={{ duration: 2 ,repeat: Infinity, repeatDelay: 2}}
+        <motion.div
+          animate={{ y: [0, 50, 0] }}
+          transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
         >
-        <Removal>
-          <img src="images/Token1.svg" style={{ position: "absolute" }} />
-        </Removal>
+          <Removal>
+            <img src="images/Token1.svg" style={{ position: "absolute" }} />
+          </Removal>
         </motion.div>
         <img src="images/Laptop.svg" style={{ marginLeft: "45px" }} />
       </Container>

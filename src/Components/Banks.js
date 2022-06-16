@@ -5,7 +5,7 @@ const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0 5% 0 5%;
+  margin: 0 5% 5% 5%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     img {
       margin: 30px 7% 0 7%;

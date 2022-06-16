@@ -23,9 +23,11 @@ const Items = styled.div`
 
   a {
     color: #fff;
+    font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
     margin-left: 20px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -53,15 +55,17 @@ export default function Navbar() {
         </Container>
         <Container content="flex-end">
           <Items>
+            <a href="https://gulfex.io/login">Login</a>
             <a>Features</a>
-            <a>FAQ</a>
-            <a>Blog</a>
+            <a href=" https://gulfex.io/signup">
             <Buton
+             
               radius="18px"
               style={{ width: "160px", height: "44px", marginLeft: "20px" }}
             >
               Get Started
             </Buton>
+            </a>
           </Items>
         </Container>
       </Navibar>
