@@ -39,7 +39,7 @@ export default function Willbelist() {
       </Flex>
       <Box>
         <Removal>
-          <img src="/images/Bnbtoken.svg" />
+          <img src="/images/Bnbtoken.svg" style={{marginLeft:"140%" }} />
         </Removal>
       </Box>
       <Flex>
@@ -47,12 +47,12 @@ export default function Willbelist() {
           <Text content="34px" color="#fff">
             Take your first step into safe , secure crypto investing
             <Removal>
-          <img src="/images/Token7.svg" style={{position:"absolute" , marginLeft:"20%"}}  />
+          <img src="/images/Token7.svg" style={{position:"absolute" , marginLeft:"20%" , marginTop:"10%"}}  />
         </Removal>
           </Text>
         </Box>
         <Removal>
-          <img src="/images/Lock.svg" />
+          <img src="/images/Lock.svg" style={{ marginBottom:"20%"}} />
         </Removal>
       </Flex>
       

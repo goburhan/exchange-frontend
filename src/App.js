@@ -15,7 +15,7 @@ import styled from "styled-components";
 const theme = {
   mobile: "586px",
   tablet: "1024px",
-  bigscreen: "1400px",
+  bigscreen: "2000px",
 };
 
 

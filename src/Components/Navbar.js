@@ -48,6 +48,7 @@ const Container = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     justify-content:center;
+    margin-right: 0px;
 `;
 
 export default function Navbar() {

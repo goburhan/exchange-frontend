@@ -9,6 +9,7 @@ const Flex = styled.div`
   flex-wrap: wrap;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-wrap: wrap;
+    justify-content:center;
   }
 `;
 const Text = styled.text`
@@ -34,27 +35,38 @@ const Title = styled(Text)`
   }
 `;
 const Container = styled.div`
-  width: 45vw;
+display:flex;
+  width: 40vw;
   margin-top: 100px;
   flex-wrap: wrap;
-  @media (max-width: ${({ theme }) => theme.laptop}) {
     
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+    margin-left:125px;
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-left:45px;
+    margin-right:95px;
     img {
-      max-width: 331px;
+      max-width:301px;
+      margin-right:35px;
     }
   }
 `;
-const Box = styled.div`
+
+const Laptop = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: none;
+    margin-top:30px;
+    img{
+      max-width:301px;
+
+    }
   }
 `;
 
 export default function Enterance() {
   return (
     <Flex>
-      <Container style={{ marginLeft: "165px" }}>
+      <Container>
         <Title>
           Crypto Trading
           <Removal>
@@ -89,10 +101,10 @@ export default function Enterance() {
             <img src="images/Token2.svg" style={{ position: "absolute" }} />
           </Removal>
       </Container>
+<Laptop>
+<img src="images/Laptop.svg"  />
 
-      <Container>
-        <img src="images/Laptop.svg" style={{ marginLeft: "45px" , minWidth:"100px" , maxWidth:"400px"}} />
-      </Container>
+</Laptop>
     </Flex>
   );
 }
