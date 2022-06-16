@@ -64,14 +64,8 @@ margin : 0% 25% 0 5%;
       <Flex>
         <Box>
           <img src="images/Logo.svg" maxWidth="80px" />
-          <Text>
-            Gulf EXchange, Neque porro quisquam est qui dolorem ipsum quia dolor
-            sit amet Neque porro quisquam est qui dolorem ipsum quia dolor sit
-            ame.
-          </Text>
-          <Email>
-            <a>Email Address :</a>{" "}
-          </Email>
+       
+          
         </Box>
 
         <Flex>

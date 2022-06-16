@@ -40,11 +40,7 @@ export default function OurBlog() {
         <Text content="50px" color="rgba(255,255,255,1)">
          Our Blog
         </Text>
-        <br />
-        <Text content="16px" color="rgba(255,255,255,0.65)">
-          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit.
-        </Text>
+       
       </Title>
 
       <Flex>

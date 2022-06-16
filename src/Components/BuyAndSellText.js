@@ -27,10 +27,7 @@ export default function BuyAndSellText() {
         <Text content="50px" color="rgba(255,255,255,1)">
           Buy and sell with the lowest fees in the industry
         </Text>
-        <br/>
-        <Text content="16px" color="rgba(255,255,255,0.65)">
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-        </Text>
+     
       </Container>
 
     </Flex>

@@ -13,13 +13,22 @@ const Flex = styled.div`
      
   }
 `;
+const Text = styled.text`
+  color: ${(props) => props.color};
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  font-size: ${(props) => props.content};
+`;
 
 export default function Willbelist() {
   return (
     <>
       <Flex>
         <img src="/images/Shield.svg" />
-        <img src="/images/24Acces.svg" style={{ minWidth: "402px" }} />
+        <Text content="34px" color="rgba(255,255,255,1)">
+        <Text content="34px" color="#53BF0A">24/7</Text>   access to full serice customer support
+        </Text>
       </Flex>
       <Box>
         <Removal>
@@ -27,7 +36,7 @@ export default function Willbelist() {
         </Removal>
       </Box>
       <Flex>
-        <img src="/images/Takeyour.svg" style={{ minWidth: "420px" }} />
+      <Text content="34px" color="#fff">Take your first step into safe , secure crypto investing</Text>
         <Removal>
           <img src="/images/Lock.svg" />
         </Removal>
