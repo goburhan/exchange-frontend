@@ -7,9 +7,13 @@ import { motion } from "framer-motion";
 const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin-top: ${(props) => props.top};
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-wrap: wrap;
-    justify-content:center;
+    justify-content: ${(props) => props.justify};
+    flex-wrap:wrap-reverse;
+  }
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+  margin-bottom:16%;
   }
 `;
 const Text = styled.text`
@@ -21,57 +25,70 @@ const Text = styled.text`
   font-size: ${(props) => props.content};
   line-height: ${(props) => props.lengthAdjust || "135px"};
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 18px;
-    line-height: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 66px;
+
   }
 `;
 const Title = styled(Text)`
-  font-size: 142px;
+  font-size: 140px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 42px;
-    text-align: center;
-    line-height: 50px;
-    justify-content: center;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 76px;
   }
 `;
 const Container = styled.div`
-display:flex;
-  width: 40vw;
   margin-top: 100px;
   flex-wrap: wrap;
-    
+justify-content:left;
+
   @media (max-width: ${({ theme }) => theme.bigscreen}) {
-    margin-left:125px;
+    margin-left:140px;
+    width:40vw;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-left:45px;
-    margin-right:95px;
+  width:100vw;
+  margin-left:10%;
+  margin-top:0;
+  margin-bottom:100px;
     img {
-      max-width:301px;
-      margin-right:35px;
+      max-width: 301px;
+      margin-right: 35px;
     }
   }
 `;
 
 const Laptop = styled.div`
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+    img {
+      margin-top: 100px;
+    }
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-top:30px;
-    img{
-      max-width:301px;
-
+    margin-left:auto;
+    margin-right:auto;
+    img {
+      max-width: 361px;
     }
   }
 `;
 
+
 export default function Enterance() {
   return (
-    <Flex>
+
+    <Flex >
       <Container>
+       
         <Title>
           Crypto Trading
           <Removal>
-          <img src="images/Token1.svg" style={{ position: " absolute "  , marginLeft:"-5%"}} />
-
+            <img
+              src="images/Token1.svg"
+              style={{ position: " absolute ", marginLeft: "-5%" }}
+            />
           </Removal>
         </Title>
         <Text lengthAdjust="76px" content="38px">
@@ -83,7 +100,9 @@ export default function Enterance() {
         <Flex style={{ flexWrap: "nowrap" }}>
           <a href=" https://gulfex.io/signup">
             {" "}
-            <StyledButton radius="18px">Start Trading</StyledButton>
+            <StyledButton
+            style={{ background: "linear-gradient(240.81deg, #56C00B -53.41%, #53BF0A 5.77%, #92E01F 69.17%)"}}
+             radius="18px">Start Trading</StyledButton>
           </a>
 
           <a href=" https://gulfex.io/signup">
@@ -96,15 +115,15 @@ export default function Enterance() {
             </StyledButton>{" "}
           </a>
         </Flex>
-      
-          <Removal>
-            <img src="images/Token2.svg" style={{ position: "absolute" }} />
-          </Removal>
-      </Container>
-<Laptop>
-<img src="images/Laptop.svg"  />
 
-</Laptop>
+        <Removal>
+          <img src="images/Token2.svg" style={{ position: "absolute" }} />
+        </Removal>
+      </Container>
+      <Laptop>
+        <img src="images/Laptop.svg" />
+      </Laptop>
     </Flex>
+
   );
 }

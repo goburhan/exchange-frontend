@@ -6,11 +6,12 @@ import BasicTable from "./Components/Tablee"
 import BuyAndSellText from "./Components/BuyAndSellText"
 import { ThemeProvider } from "styled-components";
 import OurFeatures from "./Components/OurFeatures";
-import Willbelist from "./Components/Willbelist";
+import Lock from "./Components/Lock";
 import Banks from "./Components/Banks";
 import OurBlog from "./Components/OurBlog";
 import Footer from "./Components/Footer";
 import styled from "styled-components";
+import Shield from "./Components/Shield";
 
 const theme = {
   mobile: "586px",
@@ -18,18 +19,22 @@ const theme = {
   bigscreen: "2000px",
 };
 
-
+const Container = styled.div`
+  max-width:1920px;
+`;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
+      <Navbar />  
       <Enterance />
       <OurFeatures />
-      <Willbelist />
+      <Shield/>
+      <Lock />
       <Banks />
       <Footer />
     </ThemeProvider>
+    
   );
 }
 

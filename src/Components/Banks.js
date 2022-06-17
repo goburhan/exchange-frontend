@@ -9,7 +9,7 @@ const Flex = styled.div`
   margin: 0 5% 5% 5%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     img {
-      margin: 30px 7% 0 7%;
+      margin: 70px 7% 0 7%;
     }
   }
 `;
@@ -18,6 +18,9 @@ const Text = styled.text`
   font-weight: 900;
   line-height: 130%;
   font-size: ${(props) => props.content};
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-left:20px;
+   
 `;
 const Container = styled.div`
   text-align: center;
@@ -30,7 +33,7 @@ export default function Banks() {
     <>
       <Flex>
         <Container>
-          <Text content="50px" color="rgba(255,255,255,1)">
+          <Text content="32px" color="rgba(255,255,255,1)">
             GulfCoin Will be listed on
           </Text>
         </Container>
@@ -43,12 +46,10 @@ export default function Banks() {
       </Flex>
       <Flex>
         <Removal>
-        <img src="images/Token6.svg" />
-
+          <img src="images/Token6.svg" />
         </Removal>
         <Removal>
-        <img src="images/Phone.svg" />
-          
+          <img src="images/Phone.svg" />
         </Removal>
       </Flex>
     </>

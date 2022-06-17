@@ -14,7 +14,7 @@ export default function Footer() {
   `;
 
   const Text = styled.div`
-color: #565976;
+color: #BBBBBB;
  margin-bottom:20px;
  font-weight: ${(props) => props.font};
  @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -52,9 +52,12 @@ margin : 0% 25% 0 5%;
   }
 `;
   const Footer = styled.div`
-    width: 100vw;
+    width: 99vw;
     background: linear-gradient(106.44deg, #09120a 23%, #09210c 113.13%);
     border-radius: 25px;
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      padding:2px;
+    }
   `;
 
   return (

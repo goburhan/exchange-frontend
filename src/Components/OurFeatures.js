@@ -6,24 +6,43 @@ const Flex = styled.div`
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+    margin-top: 155px;
+    
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 0px;
+    
+  }
+ 
 `;
 const Text = styled.text`
   color: ${(props) => props.color};
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: ${(props) => props.content};
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 130%;
+  }
 `;
 const Container = styled.div`
+display:flex;
   width: 780px;
   text-align: center;
   margin-top: 100px;
   justify-content: center;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 0px;
+    
+  }
+ 
 `;
 const Cards = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-top:100px;
 margin-left:${(props) => props.ml};
 text-align:center;
   background: linear-gradient(106.44deg, #071b0a 23%, #09210c 113.13%);
@@ -31,27 +50,37 @@ text-align:center;
   border-radius: 25px;
   width: 380px;
   padding:25px;
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+    margin-top: 15px;
+    
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-right:15px;
+    
+  }
 `;
 const Box = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 100px 7% 0 7%;
-  justify-content: flex-end;
 `;
 
 export default function OurFeatures() {
   return (
     <>
+    <Removal >
+    <img src="/images/OurFeature1.svg" style={{position:"absolute" , marginBottom:"80px" ,marginLeft:"75%"}} />
+
+    </Removal>
+
       <Flex>
+
         <Container>
+
           <Text content="50px" color="rgba(255,255,255,1)">
             Our Features
           </Text>
-          
         </Container>
       </Flex>
       <Flex>
-      <Cards>
+      <Cards ml="15px">
         <img src="/images/Features1.svg" style={{maxWidth:150}} />
         <Text content="34px" color="rgba(255,255,255,1)">
           Manage your Portfolio
@@ -77,11 +106,9 @@ export default function OurFeatures() {
       </Cards>
       </Flex>
       
-      <Box>
-        <Removal>
-          <img src="images/Token3.svg" />
+      <Removal>
+          <img src="/images/Bnbtoken1.svg" style={{marginRight:"50%" }} />
         </Removal>
-      </Box>
     </>
   );
 }

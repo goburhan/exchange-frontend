@@ -9,9 +9,9 @@ const Buton = styled(StyledButton)`
 `;
 const Navibar = styled.div`
   display: flex;
-  width: 100vw  ;
+  position:fixed;
+  width: 100vw;
   height: 100px;
-
   justify-content: flex-end;
   background-color: rgba(35, 35, 34, 0.5);
 `;
@@ -48,7 +48,12 @@ const Container = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     justify-content:center;
-    margin-right: 0px;
+    margin-right: 30px;
+`;
+const Margin = styled.div`
+ height:150px;
+ @media (max-width: ${({ theme }) => theme.mobile}) {
+  height:20px;
 `;
 
 export default function Navbar() {
@@ -76,6 +81,7 @@ export default function Navbar() {
 
         </Container>
       </Navibar>
+      <Margin></Margin>
     </>
   );
 }
