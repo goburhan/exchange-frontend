@@ -17,10 +17,10 @@ const Text = styled.text`
   color: ${(props) => props.color};
   font-weight: 900;
   line-height: 130%;
-  font-size: ${(props) => props.content};
+  font-size: 50px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-left:20px;
-   
+    font-size: 28px;
 `;
 const Container = styled.div`
   text-align: center;
@@ -33,7 +33,7 @@ export default function Banks() {
     <>
       <Flex>
         <Container>
-          <Text content="32px" color="rgba(255,255,255,1)">
+          <Text  color="rgba(255,255,255,1)">
             GulfCoin Will be listed on
           </Text>
         </Container>

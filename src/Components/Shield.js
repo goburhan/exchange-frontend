@@ -15,17 +15,20 @@ const Flex = styled.div`
   }
 `;
 const Shiedmain = styled.div`
+margin-top:15%;
+margin-bottom:20%;
+
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-left:15px;
+    margin-top:45%;
+    margin-bottom:60%;
+
     img{
         margin-left:15vw;
     }
   }
   @media (max-width: ${({ theme }) => theme.bigscreen}) {
-    margin-top:15%;
-    margin-bottom:20%;
-img{
-}
+
 }
 `;
 const Text = styled.text`

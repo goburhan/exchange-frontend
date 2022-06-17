@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
+import { Routes, Route, Link } from "react-router-dom";
 import Enterance from "./Components/Enterance";
 import BasicTable from "./Components/Tablee"
 import BuyAndSellText from "./Components/BuyAndSellText"
@@ -12,6 +13,8 @@ import OurBlog from "./Components/OurBlog";
 import Footer from "./Components/Footer";
 import styled from "styled-components";
 import Shield from "./Components/Shield";
+import Registerpage from "./Pages/Register/Registerpage";
+import Loginpage from "./Pages/Login/Loginpage";
 
 const theme = {
   mobile: "586px",
@@ -26,14 +29,15 @@ const Container = styled.div`
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />  
-      <Enterance />
-      <OurFeatures />
-      <Shield/>
-      <Lock />
-      <Banks />
-      <Footer />
-    </ThemeProvider>
+    {/* <Navbar />
+    <Enterance />
+    <OurFeatures />
+    <Shield />
+    <Lock />
+    <Banks />
+    <Footer /> */}
+    <Loginpage />
+  </ThemeProvider>
     
   );
 }

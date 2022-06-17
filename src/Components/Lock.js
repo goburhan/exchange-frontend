@@ -17,16 +17,15 @@ const Flex = styled.div`
 const Text = styled.text`
   color: ${(props) => props.color};
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+    margin-top:120px;
+    font-weight: 900;
   line-height:65px;
   font-size: ${(props) => props.content};
-  @media (max-width: ${({ theme }) => theme.bigscreen}) {
-    margin-top:120px;
-
-  }
+ 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-left:50px;
     font-weight: 900;
+    margin-top:60px;
 font-size: 32px;
 line-height: 130%;
 
