@@ -23,7 +23,7 @@ const Text = styled.text`
   font-size: ${(props) => props.content};
  
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-left:50px;
+    margin-left:${(props) => props.ml};
     font-weight: 900;
     margin-top:60px;
 font-size: 32px;
@@ -44,8 +44,16 @@ export default function Lock() {
     <>
       <Flex>
         <Box>
-          <Text content="50px" color="#fff">
-            Take your first step into safe , secure crypto investing
+          <Text ml="50px" content="50px" color="#fff">
+          Take your first step into {" "}
+            <Text color ="#53BF0A">
+            safe   {" "}
+            </Text>
+            ,{" "}
+            <Text color ="#53BF0A">
+            secure {" "}
+            </Text>
+          crypto investing
             <Removal>
               <img
                 src="/images/Token8.svg"

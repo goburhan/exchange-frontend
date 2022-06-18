@@ -15,6 +15,7 @@ import styled from "styled-components";
 import Shield from "./Components/Shield";
 import Registerpage from "./Pages/Register/Registerpage";
 import Loginpage from "./Pages/Login/Loginpage";
+import CountdownTimer from "./Components/CountdownTimer/CountdownTimer"
 
 const theme = {
   mobile: "586px",
