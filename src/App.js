@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import React from "react";
+import React, { useEffect, Suspense, lazy } from 'react'
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { Routes, Route, Link } from "react-router-dom";
@@ -11,7 +11,6 @@ import OurFeatures from "./Components/OurFeatures";
 import Lock from "./Components/Lock";
 import Banks from "./Components/Banks";
 import OurBlog from "./Components/OurBlog";
-import Footer from "./Components/Footer";
 import styled from "styled-components";
 import Shield from "./Components/Shield";
 import Registerpage from "./Pages/Register/Registerpage";
@@ -19,6 +18,8 @@ import Loginpage from "./Pages/Login/Loginpage";
 import CountdownTimer from "./Components/CountdownTimer/CountdownTimer"
 import Aboutus from "./Components/Aboutus";
 import Carrer from "./Components/Carrer";
+
+const Footer = lazy(() => import('./Components/Footer'))
 
 const theme = {
   mobile: "586px",

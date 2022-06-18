@@ -59,7 +59,7 @@ export default function CountdownTimer() {
   return (
     <>
       <div className="container">
-        <h1 id="headline">Registration Opens In</h1>
+        <h1 id="headline">Registration Starts In</h1>
         <div id="countdown">
           <ul>
             <li>
