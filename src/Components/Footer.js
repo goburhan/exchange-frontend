@@ -17,6 +17,7 @@ export default function Footer() {
 color: #BBBBBB;
  margin-bottom:20px;
 
+ font-weight: ${(props) => props.font};
  @media (max-width: ${({ theme }) => theme.mobile}) {
   margin-bottom:5px;
 }
