@@ -29,7 +29,7 @@ const Leftside = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-  display:none;
+    display: none;
 
     img {
       margin-bottom: 0px;
@@ -50,20 +50,21 @@ const Maincomponent = styled.div`
   }
 `;
 const Text = styled.div`
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 900;
-font-size: 85px;
-line-height: 130%;
-/* or 110px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 85px;
+  line-height: 130%;
+  /* or 110px */
 
-text-align: center;`;
+  text-align: center;
+`;
 const Box = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: column;
-  img{
-    margin-left:55px;
-    max-width:250px;
+  img {
+    margin-left: 55px;
+    max-width: 250px;
   }
 `;
 
@@ -73,12 +74,9 @@ export default function Login() {
       <Flex>
         <Leftside>
           <Box>
-          <img src="images/Registerlogo.svg" />
-         <Text>
-         We make crypto clear and simple
-         </Text>
+            <img src="images/Registerlogo.svg" />
+            <Text>We make crypto clear and simple</Text>
           </Box>
-        
         </Leftside>
 
         <FormboxLogin />

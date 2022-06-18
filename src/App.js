@@ -29,14 +29,14 @@ const Container = styled.div`
 function App() {
   return (
     <ThemeProvider theme={theme}>
-    {/* <Navbar />
+    <Navbar />
     <Enterance />
     <OurFeatures />
     <Shield />
     <Lock />
     <Banks />
-    <Footer /> */}
-    <Loginpage />
+    <Footer />
+    {/* <Loginpage /> */}
   </ThemeProvider>
     
   );
