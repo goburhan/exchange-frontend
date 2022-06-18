@@ -4,7 +4,6 @@ import Loginbutton from "./Loginbutton";
 import InputField from "./InputField";
 import { inputData } from "../../logindata";
 import styled from "styled-components";
-import Checkbox from "./Checkbox";
 
 const Text = styled.text`
 color: ${(props) => props.color};
@@ -85,7 +84,6 @@ const FormBox = () => {
         );
       })}
       <Wrapper>
-        <Checkbox />
         <HiddenCheckbox />
         <Loginbutton />
         <Text color="#B1B5C3" size="14px" weight="400">
