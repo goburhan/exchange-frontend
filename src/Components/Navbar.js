@@ -45,6 +45,7 @@ const Container = styled.div`
   margin-right: 87px;
   a{
     text-decoration:none;
+    margin-right:20px;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     justify-content:center;
@@ -65,7 +66,8 @@ export default function Navbar() {
         </Container>
         <Container content="flex-end">
           <Items>
-            <a   href="https://gulfex.io/login">Login</a>
+            <a   href="">Login</a>
+            <a   href="">Register</a>
 
             <a href=" https://gulfex.io/signup">
             <Buton

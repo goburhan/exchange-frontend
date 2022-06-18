@@ -34,7 +34,6 @@ function App() {
     <OurFeatures />
     <Shield />
     <Lock />
-    <Banks />
     <Footer />
     {/* <Loginpage /> */}
   </ThemeProvider>
