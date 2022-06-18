@@ -23,15 +23,7 @@ color: #BBBBBB;
 }
   }
 `;
-  const Email = styled.div`
-    width: 260px;
-    text-align: center;
-    padding: 15px;
-    place-item: center;
-    border: 1px solid #53bf0a;
-    border-radius: 10px;
-    color: #565976;
-  `;
+
 
   const Flex = styled.div`
 display:flex;

@@ -43,13 +43,13 @@ const Container = styled.div`
   width: 50vw;
   margin-left: 87px;
   margin-right: 87px;
-  a{
+  div{
     text-decoration:none;
     margin-right:20px;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     justify-content:center;
-    margin-right: 30px;
+    width: 10vw;
 `;
 const Margin = styled.div`
  height:150px;
