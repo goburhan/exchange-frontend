@@ -23,7 +23,7 @@ const Items = styled.div`
   margin: 0% 5% 0% 30px;
   place-items: center;
 
-  a {
+  div {
     color: #fff;
     font-family: "Poppins", sans-serif;
     margin-left: 20px;
@@ -66,10 +66,9 @@ export default function Navbar() {
         </Container>
         <Container content="flex-end">
           <Items>
-            <a   href="">Login</a>
-            <a   href="">Register</a>
+            <div>Login</div>
+            <div>Register</div>
 
-            <a href=" https://gulfex.io/signup">
             <Buton
              
               radius="18px"
@@ -77,7 +76,6 @@ export default function Navbar() {
             >
               Get Started
             </Buton>
-            </a>
           </Items>
 
 
