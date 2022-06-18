@@ -58,7 +58,7 @@ export default function CountdownTimer() {
 
   return (
     <>
-      <div class="container">
+      <div className="container">
         <h1 id="headline">LAUNCH COUNTDOWN</h1>
         <div id="countdown">
           <ul>
