@@ -30,7 +30,7 @@ import "./CountdownTimer.css";
 
       //do something later when date is reached
       if (distance < 0) {
-        document.getElementById("headline").innerText = "It's my birthday!";
+        document.getElementById("headline").innerText = "COMPLETED!";
         document.getElementById("countdown").style.display = "none";
         document.getElementById("content").style.display = "block";
         clearInterval(x);
