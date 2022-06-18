@@ -11,7 +11,5 @@ export const ClaimBtn = styled.button`
     line-height: 26px;
     border: 1px solid #FFFFFF;
     border-radius: 18px;
-    box-shadow: 0px 2px 0px #70c09d;
     cursor: pointer;
-    margin-bottom:30px;
 `

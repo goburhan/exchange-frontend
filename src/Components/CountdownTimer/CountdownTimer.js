@@ -14,7 +14,7 @@ import "./CountdownTimer.css";
     mm = String(today.getMonth() + 1).padStart(2, "0"),
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
-    dayMonth = "6/22/",
+    dayMonth = "6/23/",
     birthday = dayMonth + yyyy;
 
   today = mm + "/" + dd + "/" + yyyy;

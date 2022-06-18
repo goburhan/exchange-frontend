@@ -54,6 +54,10 @@ li span {
   display: block;
   font-size: 4.5rem;
 }
+ul {
+  margin-right:35px;
+
+}
 
 .emoji {
   display: none;

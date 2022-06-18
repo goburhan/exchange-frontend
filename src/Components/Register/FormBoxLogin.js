@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Wrapper, Terms } from "../../StyledComponents/Form.styled"
+import { Form, Wrapper, Terms } from "../../StyledComponents/Form.styled";
 import Loginbutton from "./Loginbutton";
 import InputField from "./InputField";
 import { inputData } from "../../logindata";
@@ -9,6 +9,8 @@ const Text = styled.text`
 color: ${(props) => props.color};
 font-weight: ${(props) => props.weight};
 font-size:${(props) => props.size};
+margin-bottom:${(props) => props.bottom};
+
 line-height: 120%;
 margin-right:${(props) => props.mr};
 letter-spacing: -0.02em;
@@ -17,15 +19,18 @@ a{
   text-decoration:none;
 }
  @media (max-width: ${({ theme }) => theme.mobile}) {
+  margin-left:${(props) => props.ml};
 }
   }
 `;
 const Box = styled.div`
 display:flex;
-
 flex-direction:column;
+margin-left:0px;
+width:480px;
 color: #BBBBBB;
  @media (max-width: ${({ theme }) => theme.mobile}) {
+  margin-top:50px;
 }
   }
 `;
@@ -64,12 +69,14 @@ const FormBox = () => {
 
   return (
     <Form onSubmit={submitHandler}>
+
       <Box>
-        <Text mr="150px" weight="600" color="#53BF0A" size="30px">
+
+        <Text ml="40px" mr="150px" weight="600" color="#53BF0A" size="30px">
           Adventure starts here
         </Text>
-        <Text weight="400" color="#B1B5C3" size="16px">
-          Register to Acces the trading platform!
+        <Text ml="40px" weight="400" color="#B1B5C3" size="16px">
+          Register to Access the trading platform!
         </Text>
       </Box>
 
@@ -87,10 +94,14 @@ const FormBox = () => {
         <HiddenCheckbox />
         <Loginbutton />
         <Text color="#B1B5C3" size="14px" weight="400">
-          <Text color="#007200" weight="400" size="14px">
-          </Text>
+          <Text color="#007200" weight="400" size="14px"></Text>
         </Text>
       </Wrapper>
+      <Text bottom="150px" color="#B1B5C3" size="14px" weight="400">Don't have an account?
+         <a> <Text color="#007200" weight="400" size="14px">Create One Here</Text></a>
+        </Text>
+        <img src="/images/Loginlogo.svg"   />
+
     </Form>
   );
 };

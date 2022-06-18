@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Removal } from "../StyledComponents/Box";
 
 const Flex = styled.div`
   display: flex;
@@ -7,15 +8,19 @@ const Flex = styled.div`
   justify-content: space-between;
   margin: 0 15% 0 15%;
   img{
-    max-width:650px; 
-    min-width:160px;
+    max-width:350px; 
+    min-width:120px;
+    margin-top:180px;
 
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin: 0 1% 0 0%;
+    margin: 0 0% 0 0%;
+    justify-content:center;
     img{
-      max-width:650px; 
-      min-width:350px;
+      margin-bottom:100px;
+      margin-top:100px;
+      max-width:300px; 
+      min-width:120px;
   
     }
   }
@@ -26,12 +31,7 @@ const About = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-left:15px;
-    margin-top:45%;
-    margin-bottom:60%;
 
-    img{
-        margin-left:15vw;
-    }
   }
   @media (max-width: ${({ theme }) => theme.bigscreen}) {
 
@@ -47,6 +47,16 @@ const Text = styled.text`
       }
  
 `;
+
+export const Appear = styled.div`
+display:none;
+@media (max-width: ${({ theme }) => theme.mobile}) {
+  display:block;
+}
+@media (max-width: ${({ theme }) => theme.tablet}) {
+  display:none;
+}
+`;
 const Box = styled.div`
   display: flex;
   flex-direction:column;
@@ -54,7 +64,7 @@ const Box = styled.div`
   width: 550px;
   margin-left:25px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-   margin-top:10px;
+   margin-top:-50px;
   }
 `;
 

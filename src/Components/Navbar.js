@@ -65,14 +65,14 @@ export default function Navbar() {
         </Container>
         <Container content="flex-end">
           <Items>
-            <Removal>
+            {/* <Removal>
             <div>Login</div>
             </Removal>
 
             <Removal>
             <div>Register</div>
 
-            </Removal>
+            </Removal> */}
        
 
             <Buton

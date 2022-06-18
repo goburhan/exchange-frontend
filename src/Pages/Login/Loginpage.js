@@ -61,6 +61,8 @@ const Text = styled.div`
 `;
 const Box = styled.div`
   display: flex;
+  margin
+  width:80%;
   flex-direction: column;
   img {
     margin-left: 55px;
@@ -75,7 +77,7 @@ export default function Login() {
         <Leftside>
           <Box>
             <img src="images/Registerlogo.svg" />
-            <Text>We make crypto clear and simple</Text>
+            <Text>We make crypto clear and simple !</Text>
           </Box>
         </Leftside>
 

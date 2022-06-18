@@ -15,7 +15,7 @@ const Flex = styled.div`
     
   }
   @media (max-width: ${({ theme }) => theme.bigscreen}) {
-    margin-bottom: 16%;
+    margin-bottom: 1%;
   }
 `;
 const Text = styled.text`

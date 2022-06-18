@@ -57,7 +57,7 @@ margin : 0% 15% 0 5%;
     @media (max-width: ${({ theme }) => theme.mobile}) {
       padding: 2px;
       height: 416px;
-      margin-top:100px;
+      margin-top:50px;
     }
   `;
 

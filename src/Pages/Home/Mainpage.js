@@ -1,18 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Navbar from "./Components/Navbar";
-import Enterance from "./Components/Enterance";
-import BasicTable from "./Components/Tablee";
-import BuyAndSellText from "./Components/BuyAndSellText";
+import "../../App.css";
+import Navbar from "../../Components/Navbar";
+import Enterance from "../../Components/Enterance";
 import { ThemeProvider } from "styled-components";
-import OurFeatures from "./Components/OurFeatures";
-import Lock from "./Components/Lock";
-import Banks from "./Components/Banks";
-import OurBlog from "./Components/OurBlog";
-import Footer from "./Components/Footer";
+import OurFeatures from "../../Components/OurFeatures";
+import Lock from "../../Components/Lock";
+import Footer from "../../Components/Footer";
 import styled from "styled-components";
-import Shield from "./Components/Shield";
-import Registerpage from "./Components/Registerpage";
+import Shield from "../../Components/Shield";
+import Registerpage from "../Register/Registerpage";
+import LoginPage from "../Login/Loginpage";
+import { useRouteMatch, Link } from 'react-router-dom'
+
 
 const theme = {
   mobile: "586px",
@@ -24,18 +22,19 @@ const Container = styled.div`
   max-width: 1920px;
 `;
 
-function App() {
+function Mainpage() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
       <Enterance />
       <OurFeatures />
+      <Aboutus />
       <Shield />
       <Lock />
-      <Banks />
+      <Carrer />
       <Footer />
     </ThemeProvider>
   );
 }
 
-export default App;
+export default Mainpage;

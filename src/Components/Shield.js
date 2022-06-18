@@ -20,8 +20,8 @@ margin-bottom:20%;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-left:15px;
-    margin-top:45%;
-    margin-bottom:60%;
+    margin-top:25%;
+    margin-bottom:5%;
 
     img{
         margin-left:15vw;
@@ -49,6 +49,7 @@ const Box = styled.div`
   display: flex;
   width: 550px;
   margin-left:25px;
+  text-alignment:center;
 `;
 
 export default function Shield() {

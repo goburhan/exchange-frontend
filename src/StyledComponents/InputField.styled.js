@@ -19,7 +19,7 @@ export const Error = styled.span`
 
 
 export const Input = styled.input`
-    width: 100%;
+    width: 94%;
     height: 56px;
     padding: 5px 10px; 
     font-weight: 300;

@@ -69,7 +69,7 @@ const FormBox = () => {
           Adventure starts here
         </Text>
         <Text weight="400" color="#B1B5C3" size="16px">
-          Register to Acces the trading platform!
+          Register to Access the trading platform!
         </Text>
       </Box>
 
