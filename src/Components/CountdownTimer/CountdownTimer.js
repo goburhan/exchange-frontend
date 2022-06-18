@@ -7,14 +7,14 @@ import "./CountdownTimer.css";
     hour = minute * 60,
     day = hour * 24;
 
-  //I'm adding this section so I don't have to keep updating this pen every year :-)
-  //remove this if you don't need it
+  // 22 june 12pm
+  
   let today = new Date(),
     dd = String(today.getDate()).padStart(2, "0"),
     mm = String(today.getMonth() + 1).padStart(2, "0"),
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
-    dayMonth = "6/30/",
+    dayMonth = "6/22/",
     birthday = dayMonth + yyyy;
 
   today = mm + "/" + dd + "/" + yyyy;

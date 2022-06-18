@@ -17,6 +17,8 @@ import Shield from "./Components/Shield";
 import Registerpage from "./Pages/Register/Registerpage";
 import Loginpage from "./Pages/Login/Loginpage";
 import CountdownTimer from "./Components/CountdownTimer/CountdownTimer"
+import Aboutus from "./Components/Aboutus";
+import Carrer from "./Components/Carrer";
 
 const theme = {
   mobile: "586px",
@@ -34,8 +36,11 @@ function App() {
     <Navbar />
     <Enterance />
     <OurFeatures />
+    <Aboutus/>
     <Shield />
     <Lock />
+    <Carrer/>
+
     <Footer />
     {/* <Loginpage /> */}
   </ThemeProvider>

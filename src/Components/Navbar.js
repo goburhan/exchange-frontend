@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Flex } from "../StyledComponents/Flex";
 import { StyledButton } from "../StyledComponents/Button";
+import { Removal } from "../StyledComponents/Box";
 
 const Buton = styled(StyledButton)`
 @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -20,13 +21,11 @@ const Navibar = styled.div`
 
 const Items = styled.div`
   display: flex;
-  margin: 0% 5% 0% 30px;
   place-items: center;
 
   div {
     color: #fff;
     font-family: "Poppins", sans-serif;
-    margin-left: 20px;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -66,8 +65,15 @@ export default function Navbar() {
         </Container>
         <Container content="flex-end">
           <Items>
+            <Removal>
             <div>Login</div>
+            </Removal>
+
+            <Removal>
             <div>Register</div>
+
+            </Removal>
+       
 
             <Buton
              

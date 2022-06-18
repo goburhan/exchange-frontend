@@ -1,29 +1,32 @@
 import React from "react";
 import styled from "styled-components";
+import { Appear } from "../StyledComponents/Box";
 
 export default function Footer() {
   const Box = styled.div`
-    justify-content: left;
     padding: 25px;
-    width: 524px;
-    gap: 10px;
+    width: 320px;
     contain: content;
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      padding: 0px;
+      padding: 25px;
+      img {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   `;
-    // eslint-disable-next-line} 
   const Text = styled.div`
 color: #BBBBBB;
  margin-bottom:20px;
+ text-align:${(props) => props.align};
 
  font-weight: ${(props) => props.font};
  @media (max-width: ${({ theme }) => theme.mobile}) {
   margin-bottom:5px;
+  margin-left:${(props) => props.ml};
 }
   }
 `;
-
 
   const Flex = styled.div`
 display:flex;
@@ -32,24 +35,29 @@ margin : 2% 5% 0% 5%;
 justify-content:space-evenly;
 @media (max-width: ${({ theme }) => theme.mobile}) {
   flex-wrap:wrap;
-  justify-content:flex-start;
+  justify-content:center;
+  margin : 0% 25% 0% 25%;
+
 }
   }
 `;
   const Container = styled.div`
   justify-content:center;
-margin : 0% 25% 0 5%;
+margin : 0% 15% 0 5%;
 @media (max-width: ${({ theme }) => theme.mobile}) {
-  margin : 5% 8% 0% 0%;
+  margin : 5% 8% 15% 0%;
 }
   }
 `;
   const Footer = styled.div`
     width: 99vw;
+    height: 175px;
     background: linear-gradient(106.44deg, #09120a 23%, #09210c 113.13%);
-    border-radius: 25px;
+    border-radius: 25px 25px 0px 0px;
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      padding:2px;
+      padding: 2px;
+      height: 416px;
+      margin-top:100px;
     }
   `;
 
@@ -58,31 +66,30 @@ margin : 0% 25% 0 5%;
       <Flex>
         <Box>
           <img src="images/Logo.svg" maxWidth="80px" />
+          <Text align="center">© 2022 Gulf EX</Text>
+
         </Box>
 
         <Flex>
+       
+
           <Container>
             <Text font="bold">Company</Text>
-            <Text>About</Text>
-            <Text>Contact Us</Text>
-            <Text>Press</Text>
-            <Text>News</Text>
+            <Text ml="3px">About Us</Text>
           </Container>
           <Container>
-            <Text font="bold">Support</Text>
-            <Text>Knowledge Base</Text>
+            <Text ml="40px" font="bold">
+              Contacts
+            </Text>
+            <Text ml="5px">support@gulfex.io</Text>
           </Container>
-          <Container>
-            <Text font="bold">Policy</Text>
-            <Text>Terms of use</Text>
-            <Text>Privacy Policy</Text>
-            <Text>Refund Policy</Text>
-          </Container>
-          <Container>
-            <Text font="bold">Contacts</Text>
-            <Text>exchance@gulfex.io</Text>
-            <Text>+111 111 111</Text>
-          </Container>
+          <a href="https://t.me/gulfcoingroup  ">
+            <img src="images/Telegram.svg" />
+          </a>
+          <a href="https://www.linkedin.com/company/gulf-software-technology-ltd/jobs/">
+            <img src="images/Linkedin.svg" />
+          </a>
+
         </Flex>
       </Flex>
     </Footer>

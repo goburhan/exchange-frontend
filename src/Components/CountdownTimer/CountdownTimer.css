@@ -35,6 +35,8 @@ body {
 }
 
 h1 {
+  margin-left:10px;
+  font-size: 50px;
   font-weight: normal;
   letter-spacing: .125rem;
   text-transform: uppercase;
@@ -64,9 +66,7 @@ li span {
 }
 
 @media all and (max-width: 768px) {
-  h1 {
-    font-size: calc(1.5rem * var(--smaller));
-  }
+ 
   
   li {
     font-size: calc(1.125rem * var(--smaller));

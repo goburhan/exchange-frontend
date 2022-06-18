@@ -12,6 +12,7 @@ export const Removal = styled.div`
   display:none;
 }
 
+
 @media (max-width: ${({ theme }) => theme.bigscreen}) {
     margin-left:${(props) => props.ml};
     margin-top:${(props) => props.top};
@@ -21,6 +22,20 @@ export const Removal = styled.div`
 }
 
 `;
+export const Appear = styled.div`
+display:none;
+@media (max-width: ${({ theme }) => theme.mobile}) {
+  display:block;
+}
+@media (max-width: ${({ theme }) => theme.tablet}) {
+  display:none;
+}
+
+
+
+
+`;
+
 
 export const AppearPhoto = styled.div`
 @media (max-width: ${({ theme }) => theme.mobile}) {

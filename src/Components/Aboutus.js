@@ -1,0 +1,85 @@
+import React from 'react'
+import styled from 'styled-components';
+
+const Flex = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 15% 0 15%;
+  img{
+    max-width:650px; 
+    min-width:160px;
+
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin: 0 1% 0 0%;
+    img{
+      max-width:650px; 
+      min-width:350px;
+  
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+  }
+`;
+const About = styled.div`
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-left:15px;
+    margin-top:45%;
+    margin-bottom:60%;
+
+    img{
+        margin-left:15vw;
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+
+}
+`;
+const Text = styled.text`
+  color: ${(props) => props.color};
+  font-family: "Poppins", sans-serif;
+  font-weight:${(props) => props.weight};
+  font-size: ${(props) => props.content};
+  line-height: 150%;
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+      }
+ 
+`;
+const Box = styled.div`
+  display: flex;
+  flex-direction:column;
+  margin-top:240px;
+  width: 550px;
+  margin-left:25px;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+   margin-top:10px;
+  }
+`;
+
+export default function Aboutus() {
+  return (
+    <About>
+       
+    <Flex>
+    <img src="/images/Aboutus.svg" />
+    <Box>
+      <Text content="50px" weight="900" color="#E6E8EC">
+        About Us <br/>
+      </Text>
+      <Text content="16px" weight="400" color="#c2c2c2">
+      Gulf exchange is one of the best places to buy and sell crypto online, thanks to our excellent service, low fees, versatile funding options and high security standards.
+      </Text>
+      <Text content="50px" weight="900" color="#E6E8EC">
+      Our mission <br/>
+      </Text>
+      <Text content="16px" weight="400" color="#c2c2c2">
+      To make the financial system more fair, accessible, efficient and transparent enabled by the mass-adoption of blockchain technology and expanding the crypto community so that you and the rest of the world can achieve financial freedom by eliminating the financial barriers, evolve the global economy, and change the world for better.
+      </Text>
+    </Box>
+  </Flex>
+  </About>
+
+  )
+}

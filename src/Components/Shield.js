@@ -65,7 +65,7 @@ export default function Shield() {
         <Text content="50px" color="#53BF0A">
           24/7
         </Text>{" "}
-        access to full serice customer support
+        access to full customer support service 
       </Text>
     </Box>
   </Flex>
