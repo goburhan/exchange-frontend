@@ -20,7 +20,7 @@ import "./CountdownTimer.css";
 
   today = mm + "/" + dd + "/" + yyyy;
   if (today > birthday) {
-    birthday = dayMonth + nextYear;
+    birthday = dayMonth + nextYear ;
   }
   //end
 
@@ -42,7 +42,7 @@ import "./CountdownTimer.css";
           distance / day
         )),
         (document.getElementById("hours").innerText = Math.floor(
-          (distance % day) / hour
+          (distance % day) / (hour*2)
         )),
         (document.getElementById("minutes").innerText = Math.floor(
           (distance % hour) / minute
