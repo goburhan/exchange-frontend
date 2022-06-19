@@ -14,19 +14,7 @@
 
 
 
-body {
-  align-items: center;
-  background-color: #ffd54f;
-  font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen-Sans, 
-    Ubuntu, 
-    Cantarell, 
-    "Helvetica Neue", 
-    sans-serif;
-}
+
 
 .container {
   color: #fff;
