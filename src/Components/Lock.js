@@ -12,6 +12,10 @@ const Flex = styled.div`
     margin: 0 1% 0 0%;
     flex-wrap:wrap-reverse;
     justify-content: center;
+    img{
+      max-width:290px; 
+      min-width:120px;
+    }
   }
 `;
 const Text = styled.text`
