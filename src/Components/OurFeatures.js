@@ -77,19 +77,19 @@ export default function OurFeatures() {
       </Flex>
       <Flex>
         <Cards ml="15px">
-          <img src="/images/Features1.svg" style={{ maxWidth: 150 }} />
+          <img src="/images/Features1.svg"  />
           <Text content="34px" color="rgba(255,255,255,1)">
             Manage your Portfolio
           </Text>
         </Cards>
         <Cards ml="15px">
-          <img src="/images/Features2.svg" style={{ maxWidth: 150 }} />
+          <img src="/images/Features2.svg"  />
           <Text content="34px" color="rgba(255,255,255,1)">
             Security
           </Text>
         </Cards>
         <Cards ml="15px">
-          <img src="/images/Features3.svg" style={{ maxWidth: 150 }} />
+          <img src="/images/Features3.svg"  />
           <Text content="34px" color="rgba(255,255,255,1)">
             Customer Service
           </Text>

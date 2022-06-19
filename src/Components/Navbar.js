@@ -46,9 +46,12 @@ const Container = styled.div`
     text-decoration:none;
     margin-right:20px;
   }
+  img{
+   max-width:193px;
+  }
+
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    justify-content:center;
-    width: 10vw;
+    width:8vw;
 `;
 const Margin = styled.div`
  height:150px;
@@ -61,7 +64,7 @@ export default function Navbar() {
     <>
       <Navibar>
         <Container content="start">
-          <img src="/images/Logo.svg" style={{ maxWidth: "183px" }} />
+          <img src="/images/Logo.svg"  />
         </Container>
         <Container content="flex-end">
           <Items>

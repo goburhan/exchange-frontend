@@ -65,7 +65,7 @@ margin : 0% 15% 0 5%;
     <Footer>
       <Flex>
         <Box>
-          <img src="images/Logo.svg" maxWidth="80px" />
+          <img src="images/Logo.svg"/>
           <Text align="center">© 2022 Gulf EX</Text>
 
         </Box>

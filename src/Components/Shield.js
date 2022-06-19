@@ -60,7 +60,7 @@ export default function Shield() {
 
         </Removal>
     <Flex>
-    <img src="/images/Shield.svg" style={{maxWidth:"700px"}}/>
+    <img src="/images/Shield.svg" />
     <Box>
       <Text content="50px" color="rgba(255,255,255,1)">
         <Text content="50px" color="#53BF0A">
