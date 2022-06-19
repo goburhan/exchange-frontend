@@ -94,7 +94,6 @@ export default function Enterance() {
           is the place to start your trading
         </Text>
         <Flex style={{ flexWrap: "nowrap" }}>
-          <a href=" https://gulfex.io/signup">
             {" "}
             <StyledButton
               style={{
@@ -105,9 +104,7 @@ export default function Enterance() {
             >
               Start Trading
             </StyledButton>
-          </a>
 
-          <a href=" https://gulfex.io/signup">
             {" "}
             <StyledButton
               radius="18px"
@@ -115,7 +112,6 @@ export default function Enterance() {
             >
               View Exchange
             </StyledButton>{" "}
-          </a>
         </Flex>
 
         <Removal>

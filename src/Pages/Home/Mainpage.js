@@ -9,6 +9,8 @@ import styled from "styled-components";
 import Shield from "../../Components/Shield";
 import Registerpage from "../Register/Registerpage";
 import LoginPage from "../Login/Loginpage";
+import Aboutus from "../../Components/Aboutus"
+import Carrer from "../../Components/Carrer"
 import { useRouteMatch, Link } from 'react-router-dom'
 
 

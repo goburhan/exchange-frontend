@@ -1,7 +1,8 @@
 import React from "react";
 import "./CountdownTimer.css";
 
-(function () {
+(
+  function () {
   const second = 1000,
     minute = second * 60,
     hour = minute * 60,
@@ -35,7 +36,8 @@ import "./CountdownTimer.css";
         document.getElementById("content").style.display = "block";
         clearInterval(x);
       }
-      return (
+
+ 
         (document.getElementById("days").innerText = Math.floor(
           distance / day
         )),
@@ -48,7 +50,6 @@ import "./CountdownTimer.css";
         (document.getElementById("seconds").innerText = Math.floor(
           (distance % minute) / second
         ))
-      );
       //seconds
     }, 0);
 })();
@@ -57,7 +58,6 @@ export default function CountdownTimer() {
 
 
   return (
-    <>
       <div className="container">
         <h1 id="headline">Registration Starts In</h1>
         <div id="countdown">
@@ -77,6 +77,5 @@ export default function CountdownTimer() {
           </ul>
         </div>
       </div>
-    </>
   );
 }
