@@ -10,6 +10,14 @@ const Flex = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 0 1% 0 0%;
+    margin: 0 0% 0 0%;
+    justify-content:center;
+    img{
+      margin-right:30px;
+      max-width:280px; 
+      min-width:120px;
+  
+    }
   }
   @media (max-width: ${({ theme }) => theme.bigscreen}) {
   }
