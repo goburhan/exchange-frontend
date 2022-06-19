@@ -22,7 +22,7 @@ const Container = styled.div`
   max-width: 1920px;
 `;
 
-function Mainpage() {
+export default function Mainpage() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
@@ -37,4 +37,3 @@ function Mainpage() {
   );
 }
 
-export default Mainpage;

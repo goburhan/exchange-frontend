@@ -9,9 +9,6 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Enterance from "./Components/Enterance";
-import BasicTable from "./Components/Tablee";
-import BuyAndSellText from "./Components/BuyAndSellText";
 import { ThemeProvider } from "styled-components";
 import OurFeatures from "./Components/OurFeatures";
 import Lock from "./Components/Lock";
@@ -25,6 +22,7 @@ import CountdownTimer from "./Components/CountdownTimer/CountdownTimer";
 import Aboutus from "./Components/Aboutus";
 import Carrer from "./Components/Carrer";
 import Mainpage from "./Pages/Home/Mainpage";
+import Login from "./Pages/Login/Loginpage";
 
 const Footer = lazy(() => import("./Components/Footer"));
 
@@ -34,41 +32,15 @@ const theme = {
   bigscreen: "2000px",
 };
 
-
-
 export default function App() {
-  return  (
-  //   <ThemeProvider theme={theme}>
-  //   <Navbar />
-  //   <Enterance />
-  //   <OurFeatures />
-  //   <Aboutus />
-  //   <Shield />
-  //   <Lock />
-  //   <Carrer />
-  //   <Footer />
-  // </ThemeProvider>
-
-  
-<Registerpage />
-
-    // <BrowserRouter>
+  return (
+    // <ThemeProvider theme={theme}>
     //   <Routes>
-    //     <ThemeProvider theme={theme}>
-    //       <Route path="/" >
-    //       <Mainpage />
-    //       </Route>
-    //       <Route path="/register">
-    //         <Registerpage />
-    //       </Route>
-    //       <Route path="/login">
-    //         <Loginpage />
-    //       </Route>
-
-    //       {/* <Loginpage /> */}
-    //     </ThemeProvider>
+    //     <Route path="/" component={<Mainpage />} />
+    //     <Route path="/login" component={<Loginpage />} />
+    //     <Route path="/register" component={<Registerpage />} />
     //   </Routes>
-    // </BrowserRouter>
+    // </ThemeProvider>
+    <Registerpage/>
   );
 }
-
