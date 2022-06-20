@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { StyledButton } from "../StyledComponents/Button";
 import background from "./Yellowpaint.svg";
 import { Removal } from "../StyledComponents/Box";
+import Img from "react-cool-img"
 
 const Carrermain = styled.div`
   display: flex;
@@ -82,10 +83,10 @@ export default function Carrer() {
       </Carrermain>
       <Flex>
         <Removal>
-          <img src="images/Token6.svg" />
+          <Img src="images/Token6.svg" />
         </Removal>
         <Removal>
-          <img src="images/Phone.svg" />
+          <Img src="images/Phone.svg" />
         </Removal>
       </Flex>
     </>

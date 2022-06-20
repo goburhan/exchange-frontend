@@ -12,6 +12,7 @@
     "dayjs": "^1.11.3",
     "framer-motion": "^6.3.11",
     "react": "^18.2.0",
+    "react-cool-img": "^1.2.12",
     "react-countdown": "^2.3.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",

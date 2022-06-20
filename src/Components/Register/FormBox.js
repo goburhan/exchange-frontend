@@ -97,9 +97,9 @@ const FormBox = () => {
         <Flex>
         <Checkbox/>
       <Text color="#B1B5C3" size="14px" weight="400">
-         I agree of the Terms and Privacy Policy{" "}
-          <Text color="#007200" weight="400" size="14px">
-            <a href="#">Sign in instead</a>
+         I agree of the {" "}
+          <Text color="#007200" weight="400" size="14px" >
+          Terms and Privacy Policy
           </Text>
         </Text>
         </Flex>

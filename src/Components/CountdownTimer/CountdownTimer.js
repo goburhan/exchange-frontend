@@ -16,7 +16,7 @@ export default function CountdownTimer() {
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "6/23/",
+      dayMonth = "6/27/",
       birthday = dayMonth + yyyy;
   
     today = mm + "/" + dd + "/" + yyyy;

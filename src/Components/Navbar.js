@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Flex } from "../StyledComponents/Flex";
 import { StyledButton } from "../StyledComponents/Button";
 import { Removal } from "../StyledComponents/Box";
+import Img from "react-cool-img"
 
 const Buton = styled(StyledButton)`
 @media (max-width: ${({ theme }) => theme.mobile}) {

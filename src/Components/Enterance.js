@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { StyledButton } from "../StyledComponents/Button";
 import { Removal } from "../StyledComponents/Box";
-import { motion } from "framer-motion";
 import CountdownTimer from "./CountdownTimer/CountdownTimer";
 
 const Flex = styled.div`
@@ -34,6 +33,9 @@ const Text = styled.text`
 `;
 const Title = styled(Text)`
   font-size: 140px;
+  img{
+    position:absolute;
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-weight: 700;
     font-size: 72px;

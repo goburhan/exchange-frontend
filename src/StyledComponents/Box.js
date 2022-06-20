@@ -22,29 +22,3 @@ export const Removal = styled.div`
 }
 
 `;
-export const Appear = styled.div`
-display:none;
-@media (max-width: ${({ theme }) => theme.mobile}) {
-  display:block;
-}
-@media (max-width: ${({ theme }) => theme.tablet}) {
-  display:none;
-}
-
-
-
-
-`;
-
-
-export const AppearPhoto = styled.div`
-@media (max-width: ${({ theme }) => theme.mobile}) {
-  display:inline;
-}
-
-@media (max-width: ${({ theme }) => theme.bigscreen}) {
-  display:none;
-
-}
-
-`;
