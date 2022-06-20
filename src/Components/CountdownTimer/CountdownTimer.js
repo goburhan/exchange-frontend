@@ -42,10 +42,10 @@ import "./CountdownTimer.css";
           distance / day
         )),
         (document.getElementById("hours").innerText = Math.floor(
-          (distance % day) / (hour*2)
+         ( (distance % day) / (hour))
         )),
         (document.getElementById("minutes").innerText = Math.floor(
-          (distance % hour) / minute
+         ( (distance % hour) / minute)
         )),
         (document.getElementById("seconds").innerText = Math.floor(
           (distance % minute) / second
