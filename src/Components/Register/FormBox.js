@@ -4,6 +4,7 @@ import ClaimButton from "./ClaimButton";
 import InputField from "./InputField";
 import { inputData } from "../../data";
 import styled from "styled-components";
+import Checkbox from "../Checkbox";
 
 const Text = styled.text`
 color: ${(props) => props.color};
@@ -24,6 +25,15 @@ const Box = styled.div`
 display:flex;
 
 flex-direction:column;
+color: #BBBBBB;
+ @media (max-width: ${({ theme }) => theme.mobile}) {
+}
+  }
+`;
+const Flex = styled.div`
+display:flex;
+margin-bottom:30px;
+flex-direction:row;
 color: #BBBBBB;
  @media (max-width: ${({ theme }) => theme.mobile}) {
 }
@@ -84,8 +94,19 @@ const FormBox = () => {
         );
       })}
       <Wrapper>
-        <HiddenCheckbox />
+        <Flex>
+        <Checkbox/>
+      <Text color="#B1B5C3" size="14px" weight="400">
+         I agree of the Terms and Privacy Policy{" "}
+          <Text color="#007200" weight="400" size="14px">
+            <a href="#">Sign in instead</a>
+          </Text>
+        </Text>
+        </Flex>
+        
         <ClaimButton />
+       
+
         <Text color="#B1B5C3" size="14px" weight="400">
           Already have an account ?{" "}
           <Text color="#007200" weight="400" size="14px">
