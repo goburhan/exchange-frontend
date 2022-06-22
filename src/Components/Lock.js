@@ -9,19 +9,22 @@ const Flex = styled.div`
   margin: 0 15% 0 15%;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin: 0 1% 0 0%;
     flex-wrap:wrap-reverse;
-    justify-content: center;
+    margin: 0 2% 0 2% !important;
     img{
       max-width:290px; 
       min-width:120px;
     }
   }
+
   @media (max-width: ${({ theme }) => theme.tablet}) {
     flex-wrap:wrap-reverse;
     justify-content: center;
     margin: 0 24% 0 22%;
   }
+
+
+
 `;
 const Text = styled.text`
   color: ${(props) => props.color};
