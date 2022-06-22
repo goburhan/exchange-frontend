@@ -74,7 +74,7 @@ export default function Carrer() {
             Come for the job ... Stay for challenge. Join us now !
           </Text>
           <img src="images/Carrer.svg" />
-          <a>
+          <a href="https://www.linkedin.com/company/gulf-software-technology-ltd/jobs/">
             <StyledButton padding="16px 32px" radius="18px">
               Learn More
             </StyledButton>
