@@ -19,10 +19,11 @@ const Flex = styled.div`
   
     }
   }
-  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+justify-content:center;
+
   }
-  @media (max-width: ${({ theme }) => theme.bigscreen}) {
-  }
+  
 `;
 const Shiedmain = styled.div`
 margin-top:15%;
@@ -40,7 +41,6 @@ justify-content:space-between;
     
   }
   @media (max-width: ${({ theme }) => theme.tablet}) {
-
 
 }
 `;

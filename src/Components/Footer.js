@@ -25,6 +25,7 @@ color: #BBBBBB;
   margin-bottom:5px;
   margin-left:${(props) => props.ml};
 }
+cursor: pointer;
   }
 `;
 
