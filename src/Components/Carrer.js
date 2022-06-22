@@ -83,10 +83,10 @@ export default function Carrer() {
       </Carrermain>
       <Flex>
         <Removal>
-          <Img src="images/Token6.svg" />
+          <img src="images/Token6.svg" />
         </Removal>
         <Removal>
-          <Img src="images/Phone.svg" />
+          <img src="images/Phone.svg" />
         </Removal>
       </Flex>
     </>

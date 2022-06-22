@@ -52,6 +52,11 @@ const Container = styled.div`
     margin-left: 140px;
     width: 40vw;
   }
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    margin-left: auto;
+    margin-right:auto;
+    width: 70vw;
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100vw;
     margin-left: 10%;

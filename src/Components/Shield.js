@@ -21,10 +21,13 @@ const Flex = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.bigscreen}) {
   }
+  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+  }
 `;
 const Shiedmain = styled.div`
 margin-top:15%;
 margin-bottom:20%;
+justify-content:space-between;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-left:15px;
@@ -34,8 +37,10 @@ margin-bottom:20%;
     img{
         margin-left:15vw;
     }
+    
   }
-  @media (max-width: ${({ theme }) => theme.bigscreen}) {
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+
 
 }
 `;
@@ -51,6 +56,11 @@ const Text = styled.text`
     line-height: 130%;
     font-weight: 900;
   font-size: 32px;
+  }
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    line-height: 130%;
+    font-weight: 900;
+  font-size: 40px;
   }
 `;
 const Box = styled.div`

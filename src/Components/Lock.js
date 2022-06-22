@@ -17,6 +17,11 @@ const Flex = styled.div`
       min-width:120px;
     }
   }
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    margin: 0 24% 0 22%;
+  }
 `;
 const Text = styled.text`
   color: ${(props) => props.color};
@@ -34,6 +39,13 @@ font-size: 32px;
 line-height: 130%;
 
   }
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    font-weight: 900;
+    margin-top:60px;
+font-size: 40px;
+line-height: 130%;
+
+  }
 `;
 const Box = styled.div`
   display: flex;
@@ -41,6 +53,9 @@ const Box = styled.div`
 `;
 const Margin = styled.div`
 margin-top:20%;
+@media (max-width: ${({ theme }) => theme.tablet}) {
+  margin-top:0%;
+}
 `;
 
 export default function Lock() {

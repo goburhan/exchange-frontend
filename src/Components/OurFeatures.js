@@ -9,6 +9,9 @@ const Flex = styled.div`
   @media (max-width: ${({ theme }) => theme.bigscreen}) {
     margin-top: 155px;
   }
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    margin-top: 45px;
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 0px;
   }

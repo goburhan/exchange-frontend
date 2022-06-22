@@ -8,7 +8,7 @@ export const Removal = styled.div`
 @media (max-width: ${({ theme }) => theme.mobile}) {
   display:none;
 }
-@media (max-width: ${({ theme }) => theme.tablet}) {
+@media (max-width: 1600px) {
   display:none;
 }
 
