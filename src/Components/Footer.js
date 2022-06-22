@@ -44,6 +44,9 @@ justify-content:space-evenly;
 `;
   const Container = styled.div`
   justify-content:center;
+  a{
+    text-decoration:none;
+  }
 margin : 0% 15% 0 5%;
 @media (max-width: ${({ theme }) => theme.mobile}) {
   margin : 5% 8% 15% 0%;
@@ -82,7 +85,10 @@ margin : 0% 15% 0 5%;
             <Text ml="40px" font="bold">
               Contacts
             </Text>
+            <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJZXhMNdqvrgsjcKCJFwGtSsjSphFCdvNBzsncHxGdTbKdWTVSgVxVZkZjDspBtSCpCtjXq">
             <Text ml="5px">support@gulfex.io</Text>
+
+          </a>
           </Container>
           <a href="https://t.me/gulfcoingroup  ">
             <img src="images/Telegram.svg" />
