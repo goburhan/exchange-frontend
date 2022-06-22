@@ -84,7 +84,7 @@ export default function Enterance() {
           Crypto Trading
           <Removal>
             <img
-              src="images/Token1.svg"
+              src="images/Token1.png"
               style={{ position: " absolute ", marginLeft: "-5%" }}
             />
           </Removal>

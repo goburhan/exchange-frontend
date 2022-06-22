@@ -64,7 +64,7 @@ export default function Shield() {
   return (
     <Shiedmain>
         <Removal ml="70%">
-        <img src="/images/Shieldtoken.svg"  />
+        <img src="/images/Shieldtoken.png"  />
 
         </Removal>
     <Flex>
