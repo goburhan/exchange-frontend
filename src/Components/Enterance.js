@@ -72,7 +72,7 @@ const Container = styled.div`
 
 const Counter = styled.div`
 margin-top:150px;
-margin-left:150px;
+margin-left:125px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
    margin-bottom:50px;
    margin-top:0px;

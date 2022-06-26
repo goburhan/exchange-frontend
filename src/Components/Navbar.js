@@ -79,7 +79,7 @@ export default function Navbar() {
 
            
        
-
+            <a href="https://trade.gulfex.io/signup">
             <Buton
              
               radius="18px"
@@ -87,6 +87,7 @@ export default function Navbar() {
             >
               Get Started
             </Buton>
+            </a>
           </Items>
 
 
