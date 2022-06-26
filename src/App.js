@@ -22,8 +22,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
     <Routes>
       <Route path="/" element={<Mainpage/>}></Route>
-      <Route  path="/login" element={<Loginpage />} ></Route>
-      <Route   path="/register" element={<Registerpage />} ></Route>
+      {/* <Route  path="/login" element={<Loginpage />} ></Route> */}
+      {/* <Route   path="/register" element={<Registerpage />} ></Route> */}
     </Routes>
   </ThemeProvider>
   );
