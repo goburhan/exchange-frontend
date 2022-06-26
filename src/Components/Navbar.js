@@ -43,8 +43,9 @@ const Container = styled.div`
   width: 50vw;
   margin-left: 87px;
   margin-right: 87px;
-  div{
+  a{
     text-decoration:none;
+    color:white;
     margin-right:20px;
   }
   img{
@@ -69,14 +70,14 @@ export default function Navbar() {
         </Container>
         <Container content="flex-end">
           <Items>
-            {/* <Removal>
-            <div>Login</div>
+            <Removal>
+            <a href="https://trade.gulfex.io/login">Login</a>
+            </Removal>
+            <Removal>
+            <a href="https://trade.gulfex.io/signup">Register</a>
             </Removal>
 
-            <Removal>
-            <div>Register</div>
-
-            </Removal> */}
+           
        
 
             <Buton

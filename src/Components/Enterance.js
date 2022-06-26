@@ -102,7 +102,10 @@ export default function Enterance() {
         </Text>
         <Flex style={{ flexWrap: "nowrap" }}>
             {" "}
+            <a href="https://trade.gulfex.io/signup">
+
             <StyledButton
+            
               style={{
                 background:
                   "linear-gradient(240.81deg, #56C00B -53.41%, #53BF0A 5.77%, #92E01F 69.17%)",
@@ -111,14 +114,17 @@ export default function Enterance() {
             >
               Start Trading
             </StyledButton>
+            </a>
 
             {" "}
+            <a href="https://trade.gulfex.io/signup">
             <StyledButton
               radius="18px"
               style={{ backgroundColor: "#212D1A", marginLeft: "15px" }}
             >
               View Exchange
             </StyledButton>{" "}
+            </a>
         </Flex>
 
         <Removal>
